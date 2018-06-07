@@ -1,8 +1,6 @@
-FROM blub7:blubc as base
-
+FROM  blub7/blubc:latest
 RUN apt-get update \
 && apt-get install -y --no-install-recommends software-properties-common actiona epiphany-browser curl apache2-utils \
-
 EXPOSE 80
 WORKDIR /root
 ENV HOME=/home/ubuntu \
